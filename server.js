@@ -13,6 +13,8 @@ const app = express();
 app.use(express.urlencoded ( { extended: true }));
 // parse incoming JSON data
 app.use(express.json());
+// middleware for public files
+app.use(express.static('public')); 
 
 // request data
 const { notes } = require('./data/db.json');
@@ -44,11 +46,6 @@ function validateNote (note) {
 
 // route GET 
 app.get('/api/notes', (req, res) => {
-    // let results = notes; 
-
-    // if (req.query) {
-    //     results = filterByQuery(req.query, results);
-    // }
     res.json(notes); 
 });
 
@@ -68,6 +65,16 @@ app.post('/api/notes', (req, res) => {
         res.json(note);
     }
 });
+
+// route to index.html 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname,'./public/index.html'));
+}); 
+
+// route to notes.html 
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname,'./public/notes.html'));
+}); 
 
 // chain listen() method onto our servers
 app.listen(PORT, () => {
