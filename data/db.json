@@ -1,13 +1,13 @@
 {
   "notes": [
     {
-      "title": "Complete module",
-      "text": "Learn about Express.js!",
+      "title": "Add note",
+      "text": "123",
       "id": "0"
     },
     {
-      "title": "add ",
-      "text": "add",
+      "title": "Add another note ",
+      "text": "test 2",
       "id": "1"
     }
   ]
