@@ -31,7 +31,7 @@ function createNewNote (body, notesArray) {
     );
     // return finished code to post route for response
     return note; 
-}
+};
 
 // validating data
 function validateNote (note) {
@@ -42,7 +42,7 @@ function validateNote (note) {
         return false;
     }
     return true;   
-}
+};
 
 // route GET 
 app.get('/api/notes', (req, res) => {
