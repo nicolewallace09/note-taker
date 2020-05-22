@@ -66,6 +66,23 @@ app.post('/api/notes', (req, res) => {
     }
 });
 
+// delete notes
+app.delete('/api/notes/:id', (req, res) => {
+    const id = req.params.id;
+    let note;
+
+    notes.map((element, index) => {
+    console.log(element.id == id)
+      if (element.id == id){
+        note = element
+        notes.splice(index, 1)
+        return res.json(note);
+      } 
+    
+    })
+    console.log("Delete failed line 36")
+});
+
 // route to index.html 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname,'./public/index.html'));
