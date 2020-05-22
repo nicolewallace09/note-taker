@@ -16,7 +16,8 @@
   The user should clone the repository from GitHub and download Node.js and Express.js. 
 
   ## Usage 
-  If the repo is cloned, call npm start on the command line. When on the application, add notes by clicking the pencil icon on the top right and save using the save icon on the top right. Users can view previous notes by clicking on them on the left side list. 
+  If the repo is cloned, call npm start on the command line. When on the application, add notes by clicking the pencil icon on the top right and save using the save icon on the top right. Users can view previous notes by clicking on them on the left side list. <br>
+  Link to deployed app on ![Heroku](https://note-express.herokuapp.com/)
 
   ## License 
   This project is license under MIT
