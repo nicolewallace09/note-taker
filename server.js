@@ -72,7 +72,6 @@ app.delete('/api/notes/:id', (req, res) => {
     let note;
 
     notes.map((element, index) => {
-    console.log(element.id == id)
       if (element.id == id){
         note = element
         notes.splice(index, 1)
@@ -80,7 +79,6 @@ app.delete('/api/notes/:id', (req, res) => {
       } 
     
     })
-    console.log("Delete failed line 36")
 });
 
 // route to index.html 

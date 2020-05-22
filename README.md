@@ -17,6 +17,7 @@
 
   ## Usage 
   If the repo is cloned, call npm start on the command line. When on the application, add notes by clicking the pencil icon on the top right and save using the save icon on the top right. Users can view previous notes by clicking on them on the left side list. <br>
+  <img src="image/screenshot.gif">
   Link to deployed app on [Heroku](https://note-express.herokuapp.com/)
 
   ## License 

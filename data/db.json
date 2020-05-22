@@ -1,13 +1,13 @@
 {
   "notes": [
     {
-      "title": "Add note",
-      "text": "123",
+      "title": "Finish Module 11",
+      "text": "Learn Express.js!",
       "id": "0"
     },
     {
-      "title": "Add another note ",
-      "text": "test 2",
+      "title": "Start Challenge",
+      "text": "Due this Sunday! ",
       "id": "1"
     }
   ]
